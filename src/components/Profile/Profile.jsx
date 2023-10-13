@@ -1,9 +1,9 @@
 import { TopProfile } from "./TopProfile/TopProfile"
 import { Stats } from "./Stat/Stat"
-import { Section } from "components/Section/Section.styled"
+import { SectionWrap } from "components/Section/Section"
 import { ProfileContainer } from "./Profile.styled"
 export const Profile = ({user})=>{return ( 
-<Section>
+<SectionWrap>
   <ProfileContainer> 
     <TopProfile username = {user.username}
     tag={user.tag}
@@ -14,4 +14,4 @@ export const Profile = ({user})=>{return (
       views={user.stats.views}
 likes={user.stats.likes}/>
 </ProfileContainer>
-</Section>)}
+</SectionWrap>)}

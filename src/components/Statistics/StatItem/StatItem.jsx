@@ -1,4 +1,5 @@
-export const StatItem = ()=>  <li>
-<span>.docx</span>
-<span>4%</span>
-</li>
+import { StatisticItem ,StatisticValue } from "../Statistics.stuled"
+export const StatItem = ({data, length})=>  <StatisticItem key={data.key} length={length}>
+<span>{data.label}</span>
+<StatisticValue >{data.percentage}%</StatisticValue>
+</StatisticItem>
